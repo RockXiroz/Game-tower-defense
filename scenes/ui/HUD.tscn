@@ -1,0 +1,148 @@
+[gd_scene load_steps=2 format=3 uid="uid://hud"]
+
+[ext_resource type="Script" path="res://scripts/ui/HUD.gd" id="1_hud"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_hud")
+
+[node name="TopBar" type="HBoxContainer" parent="."]
+anchors_preset = 5
+anchor_right = 1.0
+offset_top = 4.0
+offset_bottom = 36.0
+offset_left = 8.0
+offset_right = -8.0
+theme_override_constants/separation = 24
+
+[node name="RoundLabel" type="Label" parent="TopBar"]
+text = "Round: 0 / 30"
+theme_override_colors/font_color = Color(0.9, 0.85, 0.6, 1)
+theme_override_font_sizes/font_size = 18
+
+[node name="LivesLabel" type="Label" parent="TopBar"]
+text = "HP: 20"
+theme_override_colors/font_color = Color(0.9, 0.3, 0.3, 1)
+theme_override_font_sizes/font_size = 18
+
+[node name="CurrencyLabel" type="Label" parent="TopBar"]
+text = "Gold: 150"
+theme_override_colors/font_color = Color(0.9, 0.8, 0.2, 1)
+theme_override_font_sizes/font_size = 18
+
+[node name="WaveStatusLabel" type="Label" parent="TopBar"]
+text = "Press N to start wave"
+theme_override_colors/font_color = Color(0.7, 0.9, 0.7, 1)
+theme_override_font_sizes/font_size = 16
+size_flags_horizontal = 3
+
+[node name="TowerInfoPanel" type="PanelContainer" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -240.0
+offset_top = -200.0
+offset_right = -8.0
+offset_bottom = -8.0
+visible = false
+
+[node name="VBox" type="VBoxContainer" parent="TowerInfoPanel"]
+theme_override_constants/separation = 6
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -8.0
+
+[node name="TowerName" type="Label" parent="TowerInfoPanel/VBox"]
+text = "Tower Name"
+theme_override_colors/font_color = Color(0.95, 0.85, 0.5, 1)
+theme_override_font_sizes/font_size = 16
+
+[node name="TowerLevel" type="Label" parent="TowerInfoPanel/VBox"]
+text = "Level 1"
+theme_override_font_sizes/font_size = 14
+
+[node name="UpgradeCost" type="Label" parent="TowerInfoPanel/VBox"]
+text = "Upgrade: -- G"
+theme_override_colors/font_color = Color(0.8, 0.8, 0.2, 1)
+theme_override_font_sizes/font_size = 14
+
+[node name="SellValue" type="Label" parent="TowerInfoPanel/VBox"]
+text = "Sell: -- G"
+theme_override_colors/font_color = Color(0.5, 0.9, 0.5, 1)
+theme_override_font_sizes/font_size = 14
+
+[node name="Separator" type="HSeparator" parent="TowerInfoPanel/VBox"]
+
+[node name="HintLabel" type="Label" parent="TowerInfoPanel/VBox"]
+text = "U: Upgrade  S: Sell"
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_font_sizes/font_size = 12
+
+[node name="ControlsPanel" type="PanelContainer" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -170.0
+offset_right = 280.0
+offset_bottom = -8.0
+
+[node name="ControlsLabel" type="Label" parent="ControlsPanel"]
+text = "WASD/Arrows: Move cursor
+1-4: Build tower  U: Upgrade
+S: Sell  N: Next wave  P: Pause
+Esc: Cancel/Unpause
+
+[1] Harpoon Turret - 75G
+[2] Occult Obelisk - 100G
+[3] Salt Cannon   - 125G
+[4] Mad Choir Shrine - 150G"
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_font_sizes/font_size = 13
+
+[node name="PauseOverlay" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0.6)
+visible = false
+
+[node name="PauseLabel" type="Label" parent="PauseOverlay"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = -30.0
+offset_right = 120.0
+offset_bottom = 30.0
+text = "PAUSED
+Press P or Esc to resume"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.9, 0.85, 0.6, 1)
+theme_override_font_sizes/font_size = 28
+
+[node name="GameOverOverlay" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.3, 0, 0, 0.85)
+visible = false
+
+[node name="Label" type="Label" parent="GameOverOverlay"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -60.0
+offset_right = 200.0
+offset_bottom = 60.0
+text = "GAME OVER"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(1, 0.8, 0.5, 1)
+theme_override_font_sizes/font_size = 36

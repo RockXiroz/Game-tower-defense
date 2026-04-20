@@ -1,0 +1,14 @@
+# Godot 4
+.godot/
+*.uid
+export_presets.cfg
+*.import
+
+# macOS
+.DS_Store
+__MACOSX/
+
+# Builds
+builds/
+*.app/
+*.zip

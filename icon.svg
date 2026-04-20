@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" fill="#0a0515"/>
+  <!-- Tower silhouette -->
+  <rect x="44" y="32" width="40" height="64" fill="#2a1a4a"/>
+  <rect x="38" y="28" width="52" height="12" fill="#3a2a5a"/>
+  <!-- Battlements -->
+  <rect x="38" y="18" width="10" height="14" fill="#3a2a5a"/>
+  <rect x="54" y="18" width="10" height="14" fill="#3a2a5a"/>
+  <rect x="70" y="18" width="10" height="14" fill="#3a2a5a"/>
+  <rect x="82" y="18" width="8" height="14" fill="#3a2a5a"/>
+  <!-- Glowing eye -->
+  <ellipse cx="64" cy="64" rx="10" ry="7" fill="#6600aa" opacity="0.9"/>
+  <ellipse cx="64" cy="64" rx="5" ry="3.5" fill="#cc00ff"/>
+  <!-- Tentacles -->
+  <path d="M44 96 Q30 110 20 108" stroke="#1a0a2a" stroke-width="4" fill="none"/>
+  <path d="M84 96 Q98 110 108 108" stroke="#1a0a2a" stroke-width="4" fill="none"/>
+  <path d="M54 96 Q46 120 40 124" stroke="#1a0a2a" stroke-width="3" fill="none"/>
+  <path d="M74 96 Q82 120 88 124" stroke="#1a0a2a" stroke-width="3" fill="none"/>
+  <!-- Stars -->
+  <circle cx="20" cy="20" r="1.5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="100" cy="15" r="1" fill="#ffffff" opacity="0.6"/>
+  <circle cx="110" cy="40" r="1.5" fill="#ffffff" opacity="0.7"/>
+  <circle cx="15" cy="55" r="1" fill="#ffffff" opacity="0.5"/>
+</svg>
