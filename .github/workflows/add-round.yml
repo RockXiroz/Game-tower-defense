@@ -1,0 +1,42 @@
+name: Add New Round
+
+# Runs every Monday, Tuesday, and Thursday at 09:00 UTC.
+on:
+  schedule:
+    - cron: "0 9 * * 1,2,4"
+  # Allow manual trigger from the Actions tab for testing.
+  workflow_dispatch:
+
+jobs:
+  add-round:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Use a PAT if you need to trigger other workflows on the push.
+          # Otherwise the default GITHUB_TOKEN is fine.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run add_round script
+        run: python3 scripts/tools/add_round.py
+
+      - name: Commit and push new round
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Read the new round number from GameManager to use in the commit message.
+          ROUND=$(grep -oP 'TOTAL_ROUNDS\s*:=\s*\K\d+' scripts/managers/GameManager.gd)
+
+          git add scripts/data/WaveData.gd scripts/managers/GameManager.gd
+          git commit -m "chore: add round ${ROUND} [automated]"
+          git push origin HEAD

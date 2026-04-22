@@ -71,4 +71,5 @@ static func get_all_waves() -> Array:
 			{"enemy":"brine_brute","count":5,"interval":3.0,"delay":14.0},
 			{"enemy":"spawn_of_the_sleeper","count":4,"interval":6.0,"delay":20.0}
 		]},
+		{"groups": [{"enemy":"cultist","count":22,"interval":0.48,"delay":0.0},{"enemy":"deep_one","count":13,"interval":0.89,"delay":8.3}]},
 	]
