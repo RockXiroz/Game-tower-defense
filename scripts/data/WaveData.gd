@@ -74,4 +74,5 @@ static func get_all_waves() -> Array:
 		{"groups": [{"enemy":"cultist","count":22,"interval":0.48,"delay":0.0},{"enemy":"deep_one","count":13,"interval":0.89,"delay":8.3}]},
 		{"groups": [{"enemy":"cultist","count":25,"interval":0.47,"delay":0.0},{"enemy":"deep_one","count":15,"interval":0.87,"delay":8.9}]},
 		{"groups": [{"enemy":"deep_one","count":16,"interval":0.85,"delay":0.0},{"enemy":"cultist","count":27,"interval":0.46,"delay":9.8}]},
+		{"groups": [{"enemy":"deep_one","count":18,"interval":0.84,"delay":0.0},{"enemy":"cultist","count":30,"interval":0.44,"delay":10.6}]},
 	]
