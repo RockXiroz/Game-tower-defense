@@ -77,4 +77,5 @@ static func get_all_waves() -> Array:
 		{"groups": [{"enemy":"deep_one","count":18,"interval":0.84,"delay":0.0},{"enemy":"cultist","count":30,"interval":0.44,"delay":10.6}]},
 		{"groups": [{"enemy":"deep_one","count":19,"interval":0.83,"delay":0.0},{"enemy":"mist_wraith","count":16,"interval":0.62,"delay":10.9},{"enemy":"deep_one","count":19,"interval":0.83,"delay":18.8}]},
 		{"groups": [{"enemy":"cultist","count":34,"interval":0.41,"delay":0.0},{"enemy":"spawn_of_the_sleeper","count":3,"interval":4.91,"delay":10.0},{"enemy":"oracle_of_rot","count":7,"interval":1.91,"delay":20.3}]},
+		{"groups": [{"enemy":"mist_wraith","count":18,"interval":0.59,"delay":0.0},{"enemy":"cultist","count":37,"interval":0.4,"delay":8.3},{"enemy":"mist_wraith","count":18,"interval":0.59,"delay":18.7}]},
 	]
