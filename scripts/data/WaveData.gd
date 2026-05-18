@@ -82,4 +82,5 @@ static func get_all_waves() -> Array:
 		{"groups": [{"enemy":"cultist","count":42,"interval":0.4,"delay":0.0},{"enemy":"mist_wraith","count":21,"interval":0.56,"delay":11.4},{"enemy":"cultist","count":42,"interval":0.4,"delay":20.3}]},
 		{"groups": [{"enemy":"deep_one","count":26,"interval":0.75,"delay":0.0},{"enemy":"oracle_of_rot","count":9,"interval":1.85,"delay":12.8},{"enemy":"cultist","count":44,"interval":0.4,"delay":24.1},{"enemy":"deep_one","count":26,"interval":0.75,"delay":35.9}]},
 		{"groups": [{"enemy":"deep_one","count":28,"interval":0.74,"delay":0.0},{"enemy":"cultist","count":46,"interval":0.4,"delay":13.4},{"enemy":"deep_one","count":28,"interval":0.74,"delay":25.6},{"enemy":"oracle_of_rot","count":9,"interval":1.83,"delay":38.9}]},
+		{"groups": [{"enemy":"mist_wraith","count":24,"interval":0.52,"delay":0.0},{"enemy":"cultist","count":49,"interval":0.4,"delay":9.2},{"enemy":"deep_one","count":29,"interval":0.72,"delay":22.0},{"enemy":"cultist","count":49,"interval":0.4,"delay":35.5}]},
 	]
