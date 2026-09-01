@@ -9,7 +9,7 @@ signal wave_completed(round: int)
 
 const STARTING_CURRENCY := 150
 const STARTING_LIVES := 20
-const TOTAL_ROUNDS := 86
+const TOTAL_ROUNDS := 87
 
 var currency: int = STARTING_CURRENCY
 var lives: int = STARTING_LIVES
